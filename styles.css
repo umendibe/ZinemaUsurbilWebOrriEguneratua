@@ -74,11 +74,13 @@ main ul img {
 
 .flechas button {
     background-color: transparent;
+    
 }
 
 .flechas {
     align-items: center;
     display: flex;
+    margin-left: 45%;
 }
 /*FOOTER*/
 
