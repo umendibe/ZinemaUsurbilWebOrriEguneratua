@@ -62,9 +62,24 @@ main ul img {
     display:flex;
     margin-left: 25%;
     width: 200px;
-    height: auto;
+    height: 285px;
 }
 
+.flechas img {
+    width: 40px;
+    height: 40px;
+    margin-right: 25%;
+    display: flex;
+}
+
+.flechas button {
+    background-color: transparent;
+}
+
+.flechas {
+    align-items: center;
+    display: flex;
+}
 /*FOOTER*/
 
 footer img {
