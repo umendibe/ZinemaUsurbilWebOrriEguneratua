@@ -82,6 +82,16 @@ main ul img {
     display: flex;
     margin-left: 45%;
 }
+
+.barrak {
+    display:flex;
+    margin-left: 5%;
+}
+
+.barrak li {
+    margin-right: 10%;
+}
+
 /*FOOTER*/
 
 footer img {
