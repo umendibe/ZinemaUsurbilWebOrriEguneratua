@@ -41,6 +41,14 @@ main {
     color: antiquewhite;
 }
 
+main ul {
+    list-style: none;
+    display: flex;
+}
+
+main ul img {
+    margin-right: 60px;
+}
 #hamburguesa_menua {
     width: 50px;
 }
@@ -53,6 +61,8 @@ main {
     align-items: center;
     display:flex;
     margin-left: 25%;
+    width: 200px;
+    height: auto;
 }
 
 /*FOOTER*/
