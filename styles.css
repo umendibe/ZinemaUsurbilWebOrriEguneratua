@@ -117,3 +117,13 @@ footer li {
     margin-right: 20px;
 justify-content: center;
 }
+
+.sare_sozialak ul img {
+    width: 30px;
+    height: auto;
+}
+
+.eskubideak {
+    text-align: right;
+    margin-top: 10%;
+}
