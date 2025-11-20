@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(6, 6, 48);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    color:antiquewhite;
+}
+
+header li {
+    margin-right: 20px;
+justify-content: center;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+}
+
+
+.header_titulua {
+    color: antiquewhite;
+    margin-left: 50px;
+}
+
+.nabigazio_elemntuak {
+    display: none;
+    margin-left: 50px;
+}
+
+/*MAIN*/
+
+main {
+    color: antiquewhite;
+}
+
+#hamburguesa_menua {
+    width: 50px;
+}
+
+.nabarmenak_testua {
+    text-align: center;
+}
+
+#pelikula_nabarmenak img {
+    align-items: center;
+    display:flex;
+    margin-left: 25%;
+}
+
+/*FOOTER*/
+
+footer img {
+    width: 120px;
+    height: 120px;
+}
+
+footer {
+    display: flex;
+}
+
+footer p {
+    color:antiquewhite;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    color:antiquewhite;
+}
+
+footer li {
+    margin-right: 20px;
+justify-content: center;
+}
