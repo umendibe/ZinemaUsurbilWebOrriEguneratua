@@ -1,50 +1,22 @@
-function argazki_aldaketa() {
-    const images = [
-    { src: 'img2/pelikulak2/blackphone2_handia.png', text: 'BLACKPHONE 2' },
-    { src: 'img2/pelikulak2/maspalomas_handia.png', text: 'MASPALOMAS' },
-    { src: 'img2/pelikulak2/crepusculo_handia.jpg', text: 'CREPUSCULO: Nada Volverá a Ser Lo Mismo' },
-    { src: 'img2/pelikulak2/los_domingos_handia.jpg', text: 'LOS DOMINGOS' },
-    { src: 'img2/pelikulak2/tom_y_jerry_Handia.jpg', text: 'TOM Y JERRY: Aventura En El Tiempo' }
-];
+//Ez dit denbora eman js aplikatzeko, baina nere ideia zen botoiei emanda beste 5 pelikulak agertzea, beraz azkenean details batean jarri dut. 
 
-const img = document.getElementById('hasierakoArgazkia');
-
-/* ==========================
-   IRUDIA EGUNERATZEKO FUNTZIOA
-========================== */
-/* Argazkia eta testua eguneratzen ditu */
-function eguneratuArgazkia() {
-    if (!img) return; // Elementua ez badago, ez egin ezer
-    img.src = images[index].src; // Irudi berriaren bidea jarri
-    tituluak.textContent = images[index].text; // Testua eguneratu
-
-    img.classList.add('fade-out'); // Fade efektua gehitu
-
-    /* 200ms geroago irudi berria aplikatu eta efektua kendu */
-    setTimeout(() => {
-        img.src = images[index].src;
-        img.classList.remove('fade-out');
-    }, 200);
-}
-}
+let mostrandoPrimero = true;
 
 function hurrengoIrudia() {
-    if (index < images.length - 1) { // Azken irudira heldu gabe
-        index++;
-        eguneratuArgazkia();
-    }
-}
+    const lista1 = document.querySelector("#pelikula_nabarmenak ul");
+    const lista2 = document.querySelector("#pelikulak2 ul");
 
-/* Aurreko irudia erakusten du */
-function atzeraIrudia() {
-    if (index > 0) { // Lehen irudira heldu gabe
-        index--;
-        eguneratuArgazkia();
+    if (mostrandoPrimero) {
+        lista1.innerHTML = lista2.innerHTML;
+    } else {
+        lista1.innerHTML = `
+            <li><img src="img/blackphone2.jpg"></li>
+            <li><img src="img/die_my_love.jpg"></li>
+            <li><img src="img/accidente.jpg"></li>
+            <li><img src="img/ahora.jpg"></li>
+            <li><img src="img/decorado.jpg"></li>
+        `;
     }
-}
 
-/* ==========================
-   HASIERAKO ESKU-HARTZEA
-========================== */
-/* DOM guztia kargatu ondoren irudia lehenengo aldiz erakutsi */
-document.addEventListener('DOMContentLoaded', eguneratuArgazkia);
+    mostrandoPrimero = !mostrandoPrimero;
+}

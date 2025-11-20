@@ -4,6 +4,11 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body img {
+    border-radius: 8px;
+    box-shadow: rgb(255, 255, 255);
+}
+
 header {
     display: flex;
 }
@@ -11,12 +16,12 @@ header {
 header ul {
     list-style: none;
     display: flex;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 header li {
     margin-right: 20px;
-justify-content: center;
+    justify-content: center;
 }
 
 header img {
@@ -49,6 +54,7 @@ main ul {
 main ul img {
     margin-right: 60px;
 }
+
 #hamburguesa_menua {
     width: 50px;
 }
@@ -59,7 +65,7 @@ main ul img {
 
 #pelikula_nabarmenak img {
     align-items: center;
-    display:flex;
+    display: flex;
     margin-left: 25%;
     width: 200px;
     height: 285px;
@@ -74,7 +80,7 @@ main ul img {
 
 .flechas button {
     background-color: transparent;
-    
+
 }
 
 .flechas {
@@ -84,12 +90,40 @@ main ul img {
 }
 
 .barrak {
-    display:flex;
+    display: flex;
     margin-left: 5%;
 }
 
 .barrak li {
     margin-right: 10%;
+}
+
+details img {
+    align-items: center;
+    display: flex;
+    margin-left: 25%;
+    width: 200spx;
+    height: 285px;
+}
+
+.barrak2 {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.barrak2 li {
+    margin-left: 10%;
+}
+
+details{
+    transition: transform scale(1.3) ease;
+    border-radius: 10px;
+}
+
+details:hover {
+    background-color: rgb(83, 104, 210);
+    cursor:pointer;
 }
 
 /*FOOTER*/
@@ -104,18 +138,18 @@ footer {
 }
 
 footer p {
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 footer ul {
     list-style: none;
     display: flex;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 footer li {
     margin-right: 20px;
-justify-content: center;
+    justify-content: center;
 }
 
 .sare_sozialak ul img {
